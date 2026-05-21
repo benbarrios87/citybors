@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Player Ratings | City Central</title>
+
+  <link rel="stylesheet" href="css/base.css">
+</head>
+
+<body>
+
+<header class="topbar">
+  <a href="index.html" class="logo">City Central</a>
+
+  <nav>
+    <a href="kamper.html">Matches</a>
+    <a href="#">Predictions</a>
+    <a href="#">Fantasy</a>
+    <a href="ratings.html">Ratings</a>
+  </nav>
+</header>
+
+<main class="wrapper">
+
+  <section class="hero">
+    <p class="eyebrow">Manchester City player ratings</p>
+    <h1>Give Ratings</h1>
+    <p>Rate every player from 1–10 after the match.</p>
+  </section>
+
+  <section id="players" class="players-grid">
+    <div class="loading-card">Loading players...</div>
+  </section>
+
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+<script src="js/supabaseClient.js"></script>
+<script src="js/ratingsService.js"></script>
+
+</body>
+</html>
