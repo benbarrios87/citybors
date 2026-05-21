@@ -16,11 +16,13 @@ async function loadMatches() {
 
     const card = document.createElement("div");
 
-    card.innerHTML = `
-      <h2>${match.home_team} vs ${match.away_team}</h2>
-      <p>${match.competition}</p>
-      <p>Status: ${match.status}</p>
-    `;
+card.className = "match-card";
+
+card.innerHTML = `
+  <div class="match-title">${match.home_team} vs ${match.away_team}</div>
+  <div class="match-meta">${match.competition}</div>
+  <div class="badge">Status: ${match.status}</div>
+`;
 
     container.appendChild(card);
 
