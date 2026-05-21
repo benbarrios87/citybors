@@ -243,6 +243,10 @@ nav a:hover {
   background: var(--city);
   color: #07111f;
 }
+.rating-button.selected {
+  background: var(--city);
+  color: #07111f;
+}
 
 @media (max-width: 900px) {
   .players-grid {
