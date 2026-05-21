@@ -87,10 +87,10 @@ function getStatusClass(status) {
 }
 
 function getStatusText(status) {
-  if (status === "open") return "Åpen";
-  if (status === "closed") return "Stengt";
-  if (status === "finished") return "Ferdig";
-  return "Ukjent";
+  if (status === "open") return "Open";
+  if (status === "closed") return "Closed";
+  if (status === "finished") return "Finished";
+  return "Unknown";
 }
 
 loadMatches();
