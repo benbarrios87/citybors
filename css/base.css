@@ -1,1 +1,51 @@
+:root {
+  --bg: #07111f;
+  --card: rgba(255,255,255,0.08);
+  --line: rgba(255,255,255,0.14);
+  --text: #ffffff;
+  --muted: rgba(255,255,255,0.72);
+  --city: #6cabdd;
+  --gold: #ffd166;
+}
 
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: radial-gradient(circle at top, #12385a, var(--bg) 55%);
+  color: var(--text);
+  min-height: 100vh;
+}
+
+.wrapper {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+.match-card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 18px;
+  margin-bottom: 16px;
+}
+
+.match-title {
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.match-meta {
+  color: var(--muted);
+  margin-top: 6px;
+}
+
+.badge {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(108,171,221,0.18);
+  color: var(--city);
+  font-weight: 700;
+}
